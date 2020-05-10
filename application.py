@@ -18,8 +18,8 @@ def home():
 
 @app.route('/predict',methods=['POST'])
 def predict():
-	df_a = pd.read_csv(r'C:\Users\SanjayMishra\Desktop\DATA Science\Data_science_Projects\multi-class-text-analysis\active_incident.csv',encoding="latin-1")# Dataset is now stored in a Pandas Dataframe
-	df_b = pd.read_csv(r'C:\Users\SanjayMishra\Desktop\DATA Science\Data_science_Projects\multi-class-text-analysis\archive_incident.csv',encoding="latin-1")# Dataset is now stored in a Pandas Dataframe
+	df_a = pd.read_csv(r'active_incident.csv',encoding="latin-1")# Dataset is now stored in a Pandas Dataframe
+	df_b = pd.read_csv(r'archive_incident.csv',encoding="latin-1")# Dataset is now stored in a Pandas Dataframe
 	#df_c = pd.read_csv(r'C:\Users\SanjayMishra\Desktop\DATA Science\Data_science_Projects\multi-class-text-analysis\ar_incident_old.csv',encoding="latin-1")# Dataset is now stored in a Pandas Dataframe
 	#df_c = df_c.drop(axis =1 ,columns='sys_archived')
 	#df_b = df_b.drop(axis =1 ,columns='sys_archived')
