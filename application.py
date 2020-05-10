@@ -10,7 +10,7 @@ import numpy as np
 from sklearn.svm import LinearSVC
 from sklearn.model_selection import train_test_split
 
-app = Flask(__name__)
+app = Flask(__name__, template_folder='template')
 
 @app.route('/')
 def home():
