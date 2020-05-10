@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Title</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+
+	<header>
+		<div class="container">
+		<div id="brandname">
+			ML App
+		</div>
+		<h2>You should asign this incident as below description</h2>
+
+	</div>
+	</header>
+	<p style="color:blue;font-size:20;text-align: center;"><b>Results for Comment</b></p>
+	<div class="results">
+
+
+
+	<body>
+
+	{% for table in tables %}
+	            {{titles[loop.index]}}
+	            {{ table|safe }}
+	{% endfor %}
+	</body>
+
+	</div>
+
+</body>
+</html>
